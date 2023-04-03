@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="site.css">
+        
+        <title>Index</title>
+    </head>
+    <body>
+        <h1>Filter menu</h1>
+        <div>
+            <div id="searchbar">
+                <input type="text" placeholder="Search..">
+            </div>
+            <div id="filterbtn">
+                <img id="filter"  src="images/filter-icon.svg">
+            </div>
+        </div>
+
+        <!-- The whole menu that contains all filter options -->
+        <div id="overlay"></div>
+        <div id="sidebar">
+            <button class="accordion">Mealtypes</button>
+            <div class="panel" id="mealTypes">
+                <div class="btn-group">
+                    <button class="btn" onclick="btnClick.call(this);">Main course</button>
+                    <button class="btn" onclick="btnClick.call(this);">Side dish</button>
+                    <button class="btn" onclick="btnClick.call(this);">Dessert</button>
+                    <button class="btn" onclick="btnClick.call(this);">Appetizer</button>
+                    <button class="btn" onclick="btnClick.call(this);">Salad</button>
+                    <button class="btn" onclick="btnClick.call(this);">Breakfast</button>
+                    <button class="btn" onclick="btnClick.call(this);">Soup</button>
+                    <button class="btn" onclick="btnClick.call(this);">Snack</button>
+                  </div>
+            </div>
+            <button class="accordion">Intolerances</button>
+            <div class="panel" id="intolerances">
+                <div class="btn-group">
+                    <button class="btn" onclick="btnClick.call(this);">Dairy</button>
+                    <button class="btn" onclick="btnClick.call(this);">Egg</button>
+                    <button class="btn" onclick="btnClick.call(this);">Gluten</button>
+                    <button class="btn" onclick="btnClick.call(this);">Peanut</button>
+                    <button class="btn" onclick="btnClick.call(this);">Seafood</button>
+                    <button class="btn" onclick="btnClick.call(this);">Soy</button>
+                </div>
+            </div>
+            <button class="accordion">Cuisines</button>
+            <div class="panel" id="cuisines">
+                <div class="btn-group">
+                    <button class="btn" onclick="btnClick.call(this);">African</button>
+                    <button class="btn" onclick="btnClick.call(this);">American</button>
+                    <button class="btn" onclick="btnClick.call(this);">British</button>
+                    <button class="btn" onclick="btnClick.call(this);">Chinese</button>
+                    <button class="btn" onclick="btnClick.call(this);">European</button>
+                    <button class="btn" onclick="btnClick.call(this);">French</button>
+                </div>
+            </div>
+            <div class="choices" id="filters">
+                <div class="mychoice" id="val">
+                    
+                </div>
+            </div>
+            <div id="knappar">
+                <button onclick="clearFilters()">Clear filters</button>
+                <button onclick="search()">Search</button>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+        
+    </body>
+</html>
